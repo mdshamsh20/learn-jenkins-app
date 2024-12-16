@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             agent none 
             steps {
-                echo 'Test Stage'
+                sh 'test -f build/index.html'
                 
             }
         }
